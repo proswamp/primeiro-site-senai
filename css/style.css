@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(https://wallpapersmug.com/download/1600x900/ad84c3/iron-man-comicart-4k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* CONFIGURAÇÃO DO HEADER */
+
+.header-contents {
+    display: flex;
+}
+
+.header-contents>div {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.header-contents .topbar img {
+    width: 170px;
+    height: 100px;
+    margin-left: 35px;
+}
+
+.header-contents .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-contents .navbar>ul {
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header-contents .navbar>ul>li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F2D06B;
+}
+
+.header-contents .navbar>ul>li:hover {
+    font-size: 24px;
+    color: #F2AF5C;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+/* CONFIGURAÇÃO DO BODY */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1800px;
+    height: 750px;
+}
+
+.title {
+    font-size: 33px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F2D06B;
+    text-align: start;
+    margin: 0px 0px 25px 0px;
+}
+
+.title h5 {
+    font-weight: lighter;
+}
+
+.text {
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #F2D06B;
+    margin: 0px 0px 25px 0px;
+}
+
+.button button {
+    padding: 20px;
+    width: 185px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    transition: 0.5s;
+}
+
+
+/* CONFIGURAÇÃO DO FOOTER */
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    color: #F2D06B;
+    text-align: center;
+}
+
+
+/* RESPONSIVIDADE TABLET */
+
+@media (max-width: 1024px) {
+    html {
+        background-position-x: -350px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .header-contents {
+        max-width: 100%;
+    }
+    .header-contents .topbar {
+        width: 100%;
+    }
+    .header-contents .navbar ul li {
+        width: 100%;
+    }
+    .body-contents {
+        max-width: 100%;
+        margin-left: 30px;
+    }
+    .body-contents .text {
+        max-width: 100%;
+    }
+}
+
+
+/* RESPONSIVIDADE MOBILE*/
+
+@media (max-width: 425px) {
+    html {
+        background-position-x: -700px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .header-contents {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .header-contents .topbar {
+        width: 100%;
+    }
+    .header-contents .topbar img {
+        width: 40px;
+        height: 40px;
+    }
+    .header-contents .navbar ul {
+        flex-direction: column;
+    }
+    .header-contents .navbar ul li {
+        width: 100%;
+    }
+    .body-contents {
+        max-width: 100%;
+        margin-left: 30px;
+    }
+    .body-contents .text {
+        max-width: 100%;
+    }
+}
